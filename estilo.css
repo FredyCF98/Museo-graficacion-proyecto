@@ -15,8 +15,8 @@ Y para agregar un borde, se usa el "border: 1px solid "y el color que guste"; */
 
 #container {
     width: 85%;
-    margin: 0px auto; /* CORRECCIÓN: Esto centra mi página correctamente */
-    background-color: white; /
+    margin: 0px auto;
+    background: linear-gradient(to right, #FFFFFF 75%, #F4B886 75%);
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 }
 
