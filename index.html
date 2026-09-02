@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- Para comentarios se abre "<" se agrega "!" y dos lineas, esto hará que no se muestre en la página web y agregamos la documentación -->
+<html>  <!-- Para añadir la etique que contendrá toda la página web se usa hmtl con "<>" y se cierra con html agregando una diagonal -->
+<head> <!-- El head se usa para introducir todos los metadatos o los datos que no se verán en la web, serán vistos en el navegador no al usuario -->
+<meta charset="utf-8"> <!-- Esto sirve para colocar los textos en español y que se reconozcan letras como la "ñ" -->
+<title> Mi primera pagina web (by: Fredy) </title> <!-- Colocar Title para agregar titulo a la pestaña del navegador -->
+
+<link rel="stylesheet" href="estilo.css"/> 
+</head> <!-- MOVIDO: Aquí debe cerrar el head para que todo funcione -->
+
+<body> <!-- Body es para todo aquello que queremos se vea en nuestra paágina -->
+    <!-- El h1 es para agregar un titulo de encabezado, h2 es para un subtitulo por así decirlo, son diferentes niveles del 1 al 5 -->
+    <!-- la etiqueta "P" agrega un parrafo tan largo como uno quiera -->
+     <div id="container"> <!-- div ="container" crea una especie de caja o lienzo para poder trabajar-->
+        <header> <!--crea una caja para el titulo-->
+        <h1> La evolución de la Graficación Web </h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#evolucion">Evolución</a>
+                </li> 
+                <li>
+                    <a href="#aplicacion">Modo de Aplicación</a>
+                </li> 
+                <li>
+                    <a href="#experimentos">Color</a>
+                </li> 
+                <li>
+                    <a href="#algoritmo">Algoritmo</a>
+                </li> 
+                <li>
+                    <a href="#glosario">Glosario</a>
+                </li> 
+                <li>
+                    <a href="#cierre">Fuentes</a>
+                </li>
+            </ul> 
+        </nav> <!--nav sirve para crear un menu-->
+
+        <div class="clearfix"> </div> <!--Esto crea un clase aparte, para que los subtitulos no se desparramen cuando mofique en css-->
+
+        <!--Esta etiqueta de section es para crear el contenido de los cursos en una caja, article para añadir texto-->
+        <section id="content">
+            <article class="article"> 
+                <h2>1. Evolución y Fundamentos de la Graficación Digital</h2>
+           
+                <p><strong>Autor:</strong> Alfredo Chávez Figueroa</p>
+                <p><strong>Definición de graficación:</strong> Es la rama de la ingeniería de software que transforma datos matemáticos y numéricos en representaciones visuales interactivas, superando las limitaciones físicas del hardware mediante algoritmos para facilitar la toma de decisiones y la interacción humano-máquina.</p>
+            </article>
+
+            <article class="article" id="evolucion"> 
+                <h2>2. Cinco Momentos de la Evolución</h2>
+                <h3>Computadora DEUCE (1955)</h3>
+                <p><strong>Limitación anterior:</strong> Dificultad para reconocer patrones en volúmenes masivos de datos binarios impresos en papel.</p>
+                <p><strong>Cambio técnico:</strong> Integración de cuatro pantallas CRT circulares como herramienta de diagnóstico interno.</p>
+                <p><strong>Impacto:</strong> Permitió la visualización de datos en tiempo real, agilizando el diagnóstico.</p>
+                <p><strong>Ejemplo actual:</strong> Monitores y dashboards de visualización de datos en tiempo real.</p>
+                
+                <h3>Sketchpad (1963)</h3>
+                <p><strong>Limitación anterior:</strong> Restricción a formas geométricas rígidas sin edición de detalles a nivel de píxel.</p>
+                <p><strong>Cambio técnico:</strong> Manipulación directa en pantalla mediante interfaces gráficas primitivas.</p>
+                <p><strong>Impacto:</strong> Sentó las bases fundamentales para el diseño CAD y la edición gráfica.</p>
+                <p><strong>Ejemplo actual:</strong> Software CAD avanzado y tabletas de dibujo digital.</p>
+
+                <h3>Integración de la GPU</h3>
+                <p><strong>Limitación anterior:</strong> Sobrecarga severa del procesador (CPU) al renderizar gráficos, causando retrasos.</p>
+                <p><strong>Cambio técnico:</strong> Desarrollo de hardware dedicado para procesar cálculos de visualización en paralelo.</p>
+                <p><strong>Impacto:</strong> Habilitó la creación de entornos interactivos tridimensionales fluidos.</p>
+                <p><strong>Ejemplo actual:</strong> Tarjetas gráficas para videojuegos AAA y modelado 3D.</p>
+
+                <h3>WebGL en Navegadores</h3>
+                <p><strong>Limitación anterior:</strong> Dependencia de plugins externos inseguros para mostrar gráficos 3D en la web.</p>
+                <p><strong>Cambio técnico:</strong> Adopción de una API nativa para usar la GPU directamente desde el navegador.</p>
+                <p><strong>Impacto:</strong> Mejoró la seguridad, el rendimiento y la compatibilidad universal de gráficos web.</p>
+                <p><strong>Ejemplo actual:</strong> Google Earth web y videojuegos de navegador.</p>
+                
+                <h3>Xerox Alto e Interfaz Gráfica (1973)</h3>
+                <p><strong>Limitación anterior:</strong> Interacción exclusiva mediante líneas de texto y comandos de teclado.</p>
+                <p><strong>Cambio técnico:</strong> Implementación de ventanas, íconos y el uso del ratón (mouse).</p>
+                <p><strong>Impacto:</strong> Democratizó el uso de las computadoras haciéndolas visuales e intuitivas.</p>
+                <p><strong>Ejemplo actual:</strong> Los sistemas operativos modernos (Windows, macOS).</p>
+            </article>
+
+            <article class="article" id="aplicacion"> 
+                <h2>3. Una aplicación real</h2>
+                <p><strong>Usuario:</strong> Una persona que necesita caminar desde el Museo Comunitario hasta el Parque del Lago.</p>
+                <p><strong>Problema:</strong> Elegir un trayecto a pie de la forma más rápida o conveniente.</p>
+                <p><strong>Datos:</strong> Origen (Museo Comunitario), destino (Parque del Lago) y medio de transporte (A pie).</p>
+                <p><strong>Representación:</strong> Mapa con marcadores O y D, línea azul continua (Ruta A) y gris discontinua (Ruta B), con un panel de texto.</p>
+                <p><strong>Decisión:</strong> Elegir qué trayecto tomar tras comparar tiempo (12 vs 15 min), distancia y calles.</p>
+            </article>
+
+            <article class="article" id="experimentos"> 
+                <h2>4. Laboratorio de color</h2>
+                <p><strong>Experimento 1 (Caso Acromático):</strong> Predicción: Al ser R, G y B iguales, delta será 0 y saturación 0%. Datos: RGB(128, 128, 128) → Cmáx: 128, Cmín: 128, Delta: 0. Conclusión: Al no haber diferencia entre canales, el tono desaparece (0°) dejando solo un valor de gris.</p>
+                <p><strong>Experimento 2 (Pureza del color):</strong> Predicción: Si mantengo el rojo alto pero subo verde y azul, la saturación bajará. Datos: RGB(128, 64, 64) → Cmáx: 128, Cmín: 64, Delta: 64. Saturación cae al 50%. Conclusión: El acercamiento entre canales disminuye la pureza del color, acercándolo al gris.</p>
+                <p><strong>Experimento 3 (V vs L):</strong> Predicción: Valor (V) y Luminosidad (L) darán porcentajes distintos. Datos: RGB(64, 128, 192) → Cmáx: 192, Cmín: 64, Delta: 128. V: 75.3%, L: 50.2%. Conclusión: V depende únicamente del canal mayor, mientras que L usa el punto medio entre el máximo y el mínimo.</p>
+            </article>
+
+            <article class="article" id="algoritmo"> 
+                <h2>5. De la fórmula al algoritmo</h2>
+                <p><strong>Explicación:</strong> La normalización ajusta los valores de la escala 0-255 a decimales de 0-1. El Cmáx es el canal más alto y el Cmín el más bajo; su diferencia nos da el delta. En el caso acromático, delta es 0, por lo que carece de color dominante; fijamos el tono en 0 y evitamos dividir entre delta para prevenir errores.</p>
+                <pre><code>
+function convertRGBtoHSV(r, g, b) {
+  const red = r / 255;
+  const green = g / 255;
+  const blue = b / 255;
+  let cMax = Math.max(red, green, blue);
+  let cMin = Math.min(red, green, blue);
+  let delta = cMax - cMin;
+  let h = 0; let s = 0; let v = cMax * 100;
+  if (cMax !== 0) { s = (delta / cMax) * 100; }
+  if (delta !== 0) {
+    if (cMax === red) { h = 60 * (((green - blue) / delta) % 6); }
+    else if (cMax === green) { h = 60 * (((blue - red) / delta) + 2); }
+    else if (cMax === blue) { h = 60 * (((red - green) / delta) + 4); }
+  }
+  if (h < 0) { h += 360; }
+  return [Number(h.toFixed(1)), Number(s.toFixed(1)), Number(v.toFixed(1))];
+}
+                </code></pre>
+            </article>
+
+            <article class="article" id="glosario"> 
+                <h2>6. Glosario</h2>
+                <ul>
+                    <li><strong>Píxel:</strong> La unidad más pequeña de color en una pantalla o imagen rasterizada.</li>
+                    <li><strong>RGB:</strong> Modelo de color basado en mezcla de luz roja, verde y azul para pantallas.</li>
+                    <li><strong>HSV:</strong> Modelo que separa las características del color en Tono, Saturación y Valor.</li>
+                    <li><strong>Tono (Hue):</strong> La familia de color puro representada en grados (0° a 360°) dentro de un círculo.</li>
+                    <li><strong>Saturación:</strong> Qué tan intenso o puro es un color; al 0% se convierte en gris.</li>
+                    <li><strong>Valor (Value):</strong> El nivel de claridad de un color basado en su canal RGB más alto.</li>
+                    <li><strong>Luminosidad:</strong> El nivel de luz calculado como el promedio entre el canal mayor y menor.</li>
+                    <li><strong>Normalización:</strong> Convertir una escala de números a otra más sencilla (ej. 0-255 a 0-1).</li>
+                    <li><strong>Delta:</strong> Diferencia matemática entre el valor más alto y el más bajo de los canales RGB.</li>
+                    <li><strong>Caso límite:</strong> Situación extrema (como dividir entre cero) que requiere regla condicional.</li>
+                </ul>
+            </article>
+            
+            <article class="article" id="cierre">
+                <h2>7. Conclusión y Fuentes</h2>
+                <p><strong>Conclusión:</strong> Antes pensaba que el brillo de un color se medía de una sola forma y que los porcentajes de Valor (V) y Luminosidad (L) siempre serían iguales. La evidencia del experimento con RGB(64, 128, 192) cambió mi idea porque arrojó 75.3% para V y 50.2% para L, demostrando que la percepción de la luz depende de qué variables se aíslan.</p>
+                <p><strong>Fuentes y créditos:</strong></p>
+                <ul>
+                    <li>Computer History Museum, "Timeline of Computer History: 1955", URL: https://www.computerhistory.org/timeline/1955/</li>
+                    <li>Ayuda de Google Maps, "Ver instrucciones sobre cómo llegar en Google Maps", URL: https://support.google.com/maps/answer/144339</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Fuera de la sección si coloco la etiqueta "aside" es para craer una caja vertical-->
+         <aside> 
+            <h2> Barra lateral</h2>
+            <form>
+                <input type="text" placeholder="Buscar...">
+                <input type="submit" value ="Buscar"/>
+            </form>
+         </aside>
+
+         <div class="clearfix"> </div> <!--para que no mueva el pie de pagina-->
+
+         <!--fuera de aside, está la etiqueta footer para agregar un pie de pagina-->
+         <footer> 
+            Pagina Web de Alfredo Chávez Figueroa &copy; 2026
+         </footer>
+     </div>
+
+     <!-- Estas etiquetas estaban huérfanas, mejor ocultarlas o ponerlas como apuntes -->
+     <!-- Para agregar una linea recta se puede usar "hr"-->
+     <!-- Para crear una lista se utiliza el "<ul> abre y cierra y dentro de ese ul se coloca un "<li>" para agregar puntos"-->
+     <!-- En caso de querer agregar números "1.-" en lugar de puntos, se usa el "ol" en lugar de "ul"-->
+     <!-- Ahora, para agregar una imagen, se usa una etiqueta llamada "img alt="titulo de la iamagen" src"Aqui el link de la imagen buscada"/> o width="150px" esa cantida de pixeles por dar un ejemplo-->
+
+</body>
+</html>
+
+
+<!-- [Etiquetas de HTML y sus funciones para queno se me olvide asdgashjdgasjd]
+
+1.- <html> / </html>: Contiene absolutamente toda mi página web.
+2.- <head> / </head>: Guarda los datos ocultos (metadatos), el título de la pestaña y los enlaces a tus archivos CSS.
+3.- <body> / </body>: Contiene todo lo que el usuario sí va a ver en la pantalla (textos, imágenes, cajas).
+4.- <h1> a <h6>: Títulos y subtítulos. <h1> es el título principal y más grande; <h6> es el más pequeño.
+5.- <p> / </p>: Crea un párrafo de texto normal.
+6.- <strong> / </strong>: Pone el texto en negrita para resaltar su importancia en la lectura.
+7.- <em> / </em>: Pone el texto en cursiva (itálica) para dar énfasis.
+8.- <a> / </a>: Crea un enlace (link) hacia otra página web o hacia una sección de tu misma página (usando href).
+9.- <img>: Inserta una imagen. No lleva etiqueta de cierre, utiliza src="ruta-de-la-foto.jpg" para mostrarla.
+10.- <ul> / <ol>: Crea una lista. <ul> genera listas con puntos (viñetas) y <ol> genera listas con números.
+11.- <li> / </li>: Representa cada uno de los elementos o renglones individuales dentro de tu lista <ul> u <ol>.
+12.- <div> / </div>: Crea una caja genérica para agrupar otros elementos y moverlos o darles estilo juntos.
+13.- <section> / <article>: Cajas estructurales. <section> agrupa un tema completo y <article> un bloque de contenido independiente.
+14.- <aside> / </aside>: Crea una sección lateral, ideal para barras de búsqueda, anuncios o información extra.
+15.- <nav> / </nav>: Agrupa los enlaces principales de navegación (tu menú principal en la parte superior).
+16.- <footer> / </footer>: El pie de página de tu sitio, utilizado comúnmente para derechos de autor y créditos.
+aaah y el strong es para poner todo en negrita y resalte--> 

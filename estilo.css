@@ -1,0 +1,137 @@
+
+
+body {
+    background-color: #FAF3E0; 
+    font-family: Arial, sans-serif;
+}
+
+/*NOTA PARA MI: [Ok aqui en este archivos css puedo mofidicar el container del index sin hacer tanto desmadre, practicamente lo que agregue aqui
+se modifca en toda la pagina web, este container es el mismo que el de mi index. Puedo usar el valor de 70% o usar la nomenclatura px;
+para decir que tanto de ancho (width) quiero el titulo]
+
+Si agrego la etiqueta margin: 0px auto; lo que hace es centrarme lo más que pueda el titulo o lo que tenga en container al centro.
+
+Y para agregar un borde, se usa el "border: 1px solid "y el color que guste"; */
+
+#container {
+    width: 85%;
+    margin: 0px auto; /* CORRECCIÓN: Esto centra mi página correctamente */
+    background-color: white; /
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #D96C4A; /* Terracota cálido */
+    text-align: center; /* Sirve para centrar el texto o titulo*/
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    line-height: 100px; /*Alinea el texto a la altura de la caja, debe ser el mismo tamaño*/
+    color: white; /*Simplemente cambia el color del titulo*/
+    border: 3px; /*Sirve para gregar bordes, es cosa de jugar con esto y ver el estilo deseado*/
+}
+
+nav {
+    background-color: #E89D71; 
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #C05839;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra los botones del menú */
+}
+
+nav ul li { /*<-- Aqui establezco qué: Tome todo lo que hay en nav, incluyendo las listas asi la puedo modificar a mi gusto*/
+    display: inline-block; /* Cambié float: left por esto para que el menú se centre, en el el curso que vi decia una cosa pero al
+    final es mejor este */
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FAF3E0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#content {
+    float: left;
+    width: 75%; 
+    background-color: #FFFFFF;
+    min-height: 500px;
+    padding: 30px;
+    box-sizing: border-box; /* Previene que el padding desborde la caja */
+    /*NOTA: Al agregar el ancho probablemente la barra lateral
+    se haga un desmadre, para eso es necesario poner otro
+    clear fix en html y agregar el .clearfix por aqui, el  <div class="clearfix"> </div>
+    se coloca debajo del cierre del aside. */
+}
+
+aside {
+    /* El calc en el width está vinculado con el padding, el padding lo que
+    hace es espaciar la barra de busqueda lateral, dejando un espacio
+    entre los textos laterales, entonces, el calc resta el 
+    20 porciento menos otros 20 de cada pixel, espero no hacerme pelotas.*/
+
+    float: left;
+    width: 25%;
+    background-color: #F4B886; 
+    min-height: 500px;
+    padding: 20px;
+    box-sizing: border-box; /* CORRECCIÓN: Con esto ya no necesito usar el el calc() */
+}
+
+footer {
+    background-color: #D96C4A;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.article { 
+    color: #333333;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #E89D71;
+    padding-bottom: 20px;
+}
+
+/*Con article h2 por ejemplo cambio todos los titulos o subtitulos
+que tengan establecido h2, puedes modificar el tamaño de la fuente*/
+.article h2 {
+    color: #D96C4A; 
+}
+
+/* [Etiquetas y sus funciones para que no se me olvide]
+
+1.- background-color: Establece el color de fondo de un elemento o de toda la página.
+2.- font-family: Define el tipo de letra (fuente) que se usará para el texto.
+3.- width / height: Definen el ancho y el alto de una caja o elemento.
+4.- margin (top/bottom/left/right): Define el espacio exterior alrededor de una caja para separarla de otras.
+5.- padding (top/bottom/left/right): Define el espacio interior entre el borde de la caja y su contenido.
+6.- border (bottom/top/left/right): Agrega una línea (sólida, punteada, etc.) alrededor de la caja.
+7.- color: Sirve exclusivamente para cambiar el color del texto.
+8.- text-align: Alinea el texto de un elemento (izquierda, derecha o centro).
+9.- line-height: Define el alto de la línea de texto; ayuda a centrar verticalmente si mide lo mismo que el height.
+10.- box-shadow: Agrega una sombra exterior a la caja para darle profundidad.
+11.- display: Controla cómo se muestra el elemento (ej. inline-block pone los elementos uno al lado del otro).
+12.- list-style: Define el estilo de los puntos de una lista (none quita las viñetas).
+13.- text-decoration: Añade o quita decoraciones al texto (ej. none quita el subrayado de los enlaces).
+14.- font-weight: Define el grosor de la letra (ej. bold para negritas).
+15.- float: Hace que la caja flote hacia un lado, permitiendo que otro elemento se ponga a su lado.
+16.- clear: Evita que elementos flotantes se acoplen a los lados, forzando un salto de línea limpio.
+17.- box-sizing: Con "border-box" obliga a que el padding y los bordes no sumen tamaño extra y deformen la caja.
+*/
