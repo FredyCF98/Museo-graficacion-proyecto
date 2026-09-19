@@ -3,14 +3,15 @@
 <html>  <!-- Para añadir la etique que contendrá toda la página web se usa hmtl con "<>" y se cierra con html agregando una diagonal -->
 <head> <!-- El head se usa para introducir todos los metadatos o los datos que no se verán en la web, serán vistos en el navegador no al usuario -->
 <meta charset="utf-8"> <!-- Esto sirve para colocar los textos en español y que se reconozcan letras como la "ñ" -->
-<title> Mi primera pagina web (by: Fredy) </title> <!-- Colocar Title para agregar titulo a la pestaña del navegador -->
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title> Mi primera pagina web (by: Fredy) </title> 
 <link rel="stylesheet" href="estilo.css"/> 
-</head> <!-- MOVIDO: Aquí debe cerrar el head para que todo funcione -->
+</head> 
 
 <body> <!-- Body es para todo aquello que queremos se vea en nuestra paágina -->
-    <!-- El h1 es para agregar un titulo de encabezado, h2 es para un subtitulo por así decirlo, son diferentes niveles del 1 al 5 -->
-    <!-- la etiqueta "P" agrega un parrafo tan largo como uno quiera -->
+     <!-- El h1 es para agregar un titulo de encabezado, h2 es para un subtitulo por así decirlo, son diferentes niveles del 1 al 5 -->
+     <!-- la etiqueta "P" agrega un parrafo tan largo como uno quiera -->
      <div id="container"> <!-- div ="container" crea una especie de caja o lienzo para poder trabajar-->
         <header> <!--crea una caja para el titulo-->
         <h1> La evolución de la Graficación Web </h1>
@@ -143,17 +144,14 @@ function convertRGBtoHSV(r, g, b) {
                 <p><strong>Conclusión:</strong> Antes pensaba que el brillo de un color se medía de una sola forma y que los porcentajes de Valor (V) y Luminosidad (L) siempre serían iguales. La evidencia del experimento con RGB(64, 128, 192) cambió mi idea porque arrojó 75.3% para V y 50.2% para L, demostrando que la percepción de la luz depende de qué variables se aíslan.</p>
                 <p><strong>Fuentes y créditos:</strong></p>
                 <ul>
-                    <ul>
-    <li><a href="https://www.computerhistory.org/timeline/1955/" target="_blank">Computer History Museum - Timeline 1955 (DEUCE)</a></li>
-    <li><a href="https://www.ragnardigital.art/stories/a-history-of-computer-art-part-one" target="_blank">Ragnar Digital Art - A History of Computer Art (Part One)</a></li>
-    <li><a href="https://www.computerhistory.org/timeline/1963/" target="_blank">Computer History Museum - Timeline 1963 (Sketchpad)</a></li>
-    <li><a href="https://hispaprint.com/blog/disenografico/ha-del-diseno-grafico-sketchpad-el-primer-editor-grafico/" target="_blank">Hispaprint - Historia del Diseño Gráfico: Sketchpad</a></li>
-    <li><a href="https://es.wikipedia.org/wiki/Imagen_de_mapa_de_bits" target="_blank">Wikipedia - Imagen de mapa de bits (Bitmaps y Xerox Alto)</a></li>
-    <li><a href="https://guides.lib.umich.edu/c.php?g=282942&p=1885352" target="_blank">University of Michigan Library - Digital Image Formats & Graphics</a></li>
-    <li><a href="https://es.wikipedia.org/wiki/Unidad_de_procesamiento_gr%C3%A1fico" target="_blank">Wikipedia - Unidad de procesamiento gráfico (GPU)</a></li>
-    <li><a href="https://es.wikipedia.org/wiki/WebGL" target="_blank">Wikipedia - WebGL (Web Graphics Library)</a></li>
-    <li><a href="https://support.google.com/maps/answer/144339" target="_blank">Soporte de Google Maps - Ver instrucciones sobre cómo llegar</a></li>
-</ul>
+                    <li><a href="https://www.computerhistory.org/timeline/1955/" target="_blank">Computer History Museum - Timeline 1955 (DEUCE)</a></li>
+                    <li><a href="https://hispaprint.com/blog/disenografico/ha-del-diseno-grafico-sketchpad-el-primer-editor-grafico/" target="_blank">Hispaprint - Historia del Diseño Gráfico: Sketchpad</a></li>
+                    <li><a href="https://www.britannica.com/technology/Xerox-Alto" target="_blank">Britannica - Xerox Alto e Interfaz Gráfica</a></li>
+                    <li><a href="https://www.intel.la/content/www/xl/es/products/docs/processors/what-is-a-gpu.html" target="_blank">Intel - ¿Qué es una GPU?</a></li>
+                    <li><a href="https://developer.mozilla.org/es/docs/Web/API/WebGL_API" target="_blank">MDN Web Docs - WebGL (Web Graphics Library)</a></li>
+                    <li><a href="https://www.ragnardigital.art/stories/a-history-of-computer-art-part-one" target="_blank">Ragnar Digital Art - A History of Computer Art</a></li>
+                    <li><a href="https://guides.lib.umich.edu/c.php?g=282942&p=1885352" target="_blank">University of Michigan Library - Digital Image Formats & Graphics</a></li>
+                    <li><a href="https://support.google.com/maps/answer/144339" target="_blank">Soporte de Google Maps - Trayectos y mapas</a></li>
                 </ul>
             </article>
         </section>
@@ -196,7 +194,7 @@ function convertRGBtoHSV(r, g, b) {
 6.- <strong> / </strong>: Pone el texto en negrita para resaltar su importancia en la lectura.
 7.- <em> / </em>: Pone el texto en cursiva (itálica) para dar énfasis.
 8.- <a> / </a>: Crea un enlace (link) hacia otra página web o hacia una sección de tu misma página (usando href).
-9.- <img>: Inserta una imagen. No lleva etiqueta de cierre, utiliza src="ruta-de-la-foto.jpg" para mostrarla.
+9.- <img alt="ejemplo">: Inserta una imagen. No lleva etiqueta de cierre, utiliza src="ruta-de-la-foto.jpg" para mostrarla.
 10.- <ul> / <ol>: Crea una lista. <ul> genera listas con puntos (viñetas) y <ol> genera listas con números.
 11.- <li> / </li>: Representa cada uno de los elementos o renglones individuales dentro de tu lista <ul> u <ol>.
 12.- <div> / </div>: Crea una caja genérica para agrupar otros elementos y moverlos o darles estilo juntos.
@@ -204,4 +202,4 @@ function convertRGBtoHSV(r, g, b) {
 14.- <aside> / </aside>: Crea una sección lateral, ideal para barras de búsqueda, anuncios o información extra.
 15.- <nav> / </nav>: Agrupa los enlaces principales de navegación (tu menú principal en la parte superior).
 16.- <footer> / </footer>: El pie de página de tu sitio, utilizado comúnmente para derechos de autor y créditos.
-aaah y el strong es para poner todo en negrita y resalte--> 
+aaah y el strong es para poner todo en negrita y resalte-->
