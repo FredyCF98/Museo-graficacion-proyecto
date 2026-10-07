@@ -109,8 +109,13 @@
             <article class="article" id="experimentos"> 
                 <h2>4. Laboratorio de color</h2>
                 <p><strong>Experimento 1 (Caso Acromático):</strong> Predicción: Al ser R, G y B iguales, delta será 0 y saturación 0%. Datos: RGB(128, 128, 128) → Cmáx: 128, Cmín: 128, Delta: 0. Conclusión: Al no haber diferencia entre canales, el tono desaparece (0°) dejando solo un valor de gris.</p>
+                <img src="ImagenWeb/gris.png" alt="WebGL en Navegadores" style="max-width: 100%; height: auto; margin-top: 15px; border-radius: 8px;">
+                
                 <p><strong>Experimento 2 (Pureza del color):</strong> Predicción: Si mantengo el rojo alto pero subo verde y azul, la saturación bajará. Datos: RGB(128, 64, 64) → Cmáx: 128, Cmín: 64, Delta: 64. Saturación cae al 50%. Conclusión: El acercamiento entre canales disminuye la pureza del color, acercándolo al gris.</p>
+                <img src="ImagenWeb/pureza.png" alt="WebGL en Navegadores" style="max-width: 100%; height: auto; margin-top: 15px; border-radius: 8px;">
+                
                 <p><strong>Experimento 3 (V vs L):</strong> Predicción: Valor (V) y Luminosidad (L) darán porcentajes distintos. Datos: RGB(64, 128, 192) → Cmáx: 192, Cmín: 64, Delta: 128. V: 75.3%, L: 50.2%. Conclusión: V depende únicamente del canal mayor, mientras que L usa el punto medio entre el máximo y el mínimo.</p>
+                <img src="ImagenWeb/azul.png" alt="WebGL en Navegadores" style="max-width: 100%; height: auto; margin-top: 15px; border-radius: 8px;">
             </article>
 
             <article class="article" id="algoritmo"> 
